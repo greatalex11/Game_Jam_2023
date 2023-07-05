@@ -1,29 +1,34 @@
-// function setup() {
-// 	new Canvas(250, 100);
-// }
-
-// function draw() {
-// 	background('blue');
-// }
-
-let block, floor;
+let player, floor;
 
 function setup() {
-   new Canvas(60, 342);
+   new Canvas(800, 600);
+   world.gravity.x = 10;
    world.gravity.y = 10;
 
-   block = new Sprite(30, 30);
-   floor = new Sprite(30, 300, 60, 5, "static");
-   floor.color = "red";
+   player = new Sprite((0, 255, 0), 0);
+   player.img = "./assets/img/pngwing.com.png";
+   player.scale = 0.01;
+   floor = new Sprite(250, 200, 500, 20, "static");
+   obstacle = new Sprite(550, 180, 100, 100, "static");
 }
 
 function draw() {
    clear();
-   if (block.colliding(floor)) {
-      block.color = "red";
-   } else block.color = "blue";
-
-   if (block.colliding(floor) > 60) {
-      block.vel.y = -9;
+   if (kb.presses("right")) {
+      player.vel.x = 3;
    }
+   if (kb.presses("left")) {
+      player.vel.x = -3;
+   }
+   if (kb.presses("up")) {
+      player.vel.y = -4;
+   }
+   if (kb.presses("down")) {
+      camera.zoom = 1.5;
+   }
+   if (player.collides(obstacle)) {
+      player.vel.x = -5;
+   }
+
+   camera.x = player.x;
 }
