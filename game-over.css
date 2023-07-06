@@ -1,0 +1,22 @@
+#container{
+    width: 800px;
+    height: 600px;
+    font-family: 'Press Start 2P', display;
+    display: flex;
+    flex-direction: column;
+    background-color:limegreen;
+}
+h2{
+    color: #9957C2;
+    font-size: 80px;
+    padding-top: 180px;
+    padding-left:50px;
+    text-shadow: 10px 10px 10px #3C085C;
+    margin: 0;
+    position: absolute;
+}
+img{
+    display: block;
+    margin: auto;
+    z-index: 1;
+}

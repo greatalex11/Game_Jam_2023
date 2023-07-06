@@ -1,0 +1,26 @@
+#container{
+    width: 800px;
+    height: 600px;
+    font-family: 'Press Start 2P', display;
+    display: flex;
+    flex-direction: column;
+    background-color:limegreen;
+}
+h1{
+    color: #9957C2;
+    font-size: 80px;
+    padding-top: 30px;
+    padding-left:50px;
+    text-shadow: 10px 10px 10px #3C085C;
+}
+.btn-styled {
+    font-size: 25px;
+    margin: 100px;
+    padding: 10px;
+    line-height: 2;
+    color:limegreen;
+    text-shadow: 5px 5px 5px #023608;
+    font-family: 'Press Start 2P', display;
+    background-color: #9957C2;
+    box-shadow: 20px 20px 10px #3C085C;
+}
