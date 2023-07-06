@@ -1,4 +1,4 @@
-let player, floor, bonus;
+let player, floor, bonus, infirmiere;
 
 function setup() {
    new Canvas(800, 600);
@@ -7,6 +7,7 @@ function setup() {
    player.layer = 2;
    player.scale = 1.5;
    // player.offset.y = -100;
+
    bonus = new Sprite(400, 470, 120, 100);
    bonus.layer = 3;
    bonus.scale = 2;
