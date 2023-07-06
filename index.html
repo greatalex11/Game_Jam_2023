@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>p5play</title>
-      <link rel="stylesheet" href="style.css" />
-      <style>
-         html,
-         body {
-            margin: 0;
-            padding: 0;
-            overscroll-behavior: none;
-         }
-      </style>
+      <link rel="preconnect" href="https://fonts.bunny.net" />
+      <link
+         href="https://fonts.bunny.net/css?family=press-start-2p:400"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="accueil.css" />
+      <title>Document</title>
    </head>
-
    <body>
-      <script src="node_modules/p5/lib/p5.js"></script>
-      <script src="node_modules/p5play/p5play.js"></script>
-      <script src="node_modules/p5/lib/addons/p5.sound.min.js"></script>
-      <script src="node_modules/p5play/planck.min.js"></script>
-      <script src="floor-test.js"></script>
+      <div id="container">
+         <h1>ESC'EHPAD</h1>
+
+         <img
+            src="chambre.png"
+            alt="chambre d'Huguette"
+            width="800"
+            height="600"
+         />
+
+         <button class="btn-styled"><a href="game.html">Play</a></button>
+
+         <script src="accueil.js"></script>
+      </div>
    </body>
 </html>
