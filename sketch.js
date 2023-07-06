@@ -35,6 +35,12 @@ function draw() {
    if (player.position.y < 0) {
       player.position.y = 0;
    }
+   if (player.rotation < 0) {       
+      player.rotation = 0;    
+   }    
+   if (player.rotation > 0) {       
+      player.rotation = 0;    
+   }
    if (kb.pressing("left")) {
       player.ani.play();
       player.ani = "walk";
