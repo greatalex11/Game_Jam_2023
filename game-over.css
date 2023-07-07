@@ -5,18 +5,18 @@
     display: flex;
     flex-direction: column;
     background-color:limegreen;
+    margin:200px;
 }
 h2{
     color: #9957C2;
     font-size: 80px;
-    padding-top: 180px;
-    padding-left:50px;
-    text-shadow: 10px 10px 10px #3C085C;
+    padding-left: 35px;
+    padding-top: 310px;
+    text-shadow: 15px 15px 15px #3C085C;
     margin: 0;
     position: absolute;
 }
 img{
     display: block;
     margin: auto;
-    z-index: 1;
 }
