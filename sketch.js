@@ -1,4 +1,13 @@
-let player, floor, bonus;
+let player,
+   floor,
+   bonus,
+   obstacle,
+   obstacle1,
+   obstacle2,
+   obstacle3,
+   obstacle4,
+   obstacle5,
+   obstacle6;
 
 function setup() {
    new Canvas(800, 600);
@@ -19,7 +28,18 @@ function setup() {
    bckgrnd.img = "./assets/img/decor.png";
    // bckgrnd.overlaps(player);
 
-   obstacle = new Sprite(3000, 580, 100, 100, "static");
+   obstacle = new Sprite(1000, 580, 100, 100, "static");
+   obstacle1 = new Sprite(100, 200, 100, 100, "static");
+   obstacle1.layer = 3;
+   obstacle2 = new Sprite(10000, 1500, 100, 100, "static");
+   obstacle2.layer = 3;
+   obstacle3 = new Sprite(300, 400, 100, 100, "static");
+   obstacle3.layer = 3;
+   obstacle4 = new Sprite(3000, 580, 100, 100, "static");
+   obstacle4.layer = 3;
+   obstacle5 = new Sprite(3000, 580, 100, 100, "static");
+   obstacle5.layer = 3;
+   obstacle6 = new Sprite(3000, 580, 100, 100, "static");
    floor = new Sprite(0, 600, 10000, 50, "static");
    floor.color = "red";
    floor.collider = "static";
@@ -35,11 +55,11 @@ function draw() {
    if (player.position.y < 0) {
       player.position.y = 0;
    }
-   if (player.rotation < 0) {       
-      player.rotation = 0;    
-   }    
-   if (player.rotation > 0) {       
-      player.rotation = 0;    
+   if (player.rotation < 0) {
+      player.rotation = 0;
+   }
+   if (player.rotation > 0) {
+      player.rotation = 0;
    }
    if (kb.pressing("left")) {
       player.ani.play();
